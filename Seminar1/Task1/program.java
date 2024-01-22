@@ -1,3 +1,4 @@
+package IntroductionToJava.Seminar1.Task1;
 import java.util.Scanner;
 import java.time.LocalDateTime;  
 public class program {
