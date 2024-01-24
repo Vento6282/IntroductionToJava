@@ -7,10 +7,18 @@ public class program {
     public static void main(String[] args) {
         // int random_int = (int)Math.floor(Math.random() * (2));
         // System.out.println(random_int);
-        int[] arr = new int[10];
-        for (int i = 0; i < arr.length; i++){
-            arr[i] = (int)Math.floor(Math.random() * (2));
-            System.out.println(arr[i]);
+        int[] arr = {1,1,0,1,1,1};
+        int count_max = 0;
+        int count = 0;
+        for (int i = 0; i <arr.length; i++){
+            if (arr[i] == 1){
+                count = count + 1;
+                if (count > count_max){
+                    count_max = count;
+                }
+            } else count = 0;
         }
+        System.out.printf("Максимальное количество подряд 1 - %d", count_max);
     }
 }
+
