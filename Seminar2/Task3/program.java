@@ -12,6 +12,7 @@ public class program {
         System.out.println("Введите строку: ");
         String str = scr.nextLine();
         System.out.println(palindrom(str));
+        scr.close();;
     }
     static boolean palindrom(String str){
         for (int i = 0; i <= str.length() / 2; i++){

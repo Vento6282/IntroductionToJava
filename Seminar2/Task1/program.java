@@ -37,6 +37,7 @@ public class program {
         }
         c2 = str;
         System.out.println(generate_str(length, c1, c2));
+        scr.close();
     }
     static String generate_str(int n, String c1, String c2){
         String result = "";
