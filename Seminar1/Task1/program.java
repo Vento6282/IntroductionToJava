@@ -11,5 +11,6 @@ public class program {
         else if (time >= 12 && time <18) System.out.printf("Добрый день, %s!", name);
         else if (time >= 18 && time <23) System.out.printf("Добрый вечер, %s!", name);
         else System.out.printf("Доброй ночи, %s!", name);
+        iScanner.close();
     }
 }
