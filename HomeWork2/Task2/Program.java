@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Scanner;
 
 // Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
 public class Program{ 
