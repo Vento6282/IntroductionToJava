@@ -1,7 +1,7 @@
 package IntroductionToJava.Seminar4.Task1;
 
 import java.util.ArrayList;
-import java.util.Iterator;
+// import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 

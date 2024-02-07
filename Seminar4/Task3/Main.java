@@ -9,7 +9,7 @@ import java.util.Scanner;
 // Если введено print, выводит строки так, чтобы последняя введенная была первой в списке, а первая - последней.
 // Если введено revert, удаляет предыдущую введенную строку из памяти.
 
-public class Program {
+public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         LinkedList<String> list = new LinkedList<>();
