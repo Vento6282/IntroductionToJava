@@ -31,11 +31,11 @@ public class Program {
     }
 
     static void test2(List<Integer> list) {
-        long sum = 0;
+        // long sum = 0;
         long timeStart = System.currentTimeMillis();
-        for (Integer integer : list) {
-            sum += integer;
-        }
+        // for (Integer integer : list) {
+        //     sum += integer;
+        // }
         long timeFinish = System.currentTimeMillis();
         System.out.println(list.getClass().getSimpleName() + ": " + (timeFinish - timeStart));
     }

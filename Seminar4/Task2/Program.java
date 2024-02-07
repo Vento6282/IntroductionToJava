@@ -31,5 +31,6 @@ public class Program {
                     list.add(num, text);
             }
         }
+        scanner.close();
     }
 }

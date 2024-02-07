@@ -1,6 +1,5 @@
 package IntroductionToJava.HomeWork2.Task2;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.FileReader;
 import java.io.BufferedReader;
@@ -39,10 +38,10 @@ public class Program{
 }
 
 class BubbleSort {
-    private static File log;
-    private static FileWriter fileWriter;
+    // private static File log;
+    // private static FileWriter fileWriter;
 
-    public static void sort(int[] mas) {
+    public void sort(int[] mas) {
         try (FileWriter fileWriter = new FileWriter("log.txt")){
             fileWriter.write("");
         } catch (IOException e) {

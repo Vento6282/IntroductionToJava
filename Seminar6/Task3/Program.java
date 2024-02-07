@@ -23,66 +23,65 @@ package IntroductionToJava.Seminar6.Task3;
 4. Выведите снова содержимое множества из пункта 2, убедитесь, что дубликаты удалились.
 */
 
-
 import java.util.HashSet;
 import java.util.Set;
 
 public class Program {
-public static void main(String[] args) {
-Cat cat1 = new Cat();
-cat1.name = "Барсик";
-cat1.poroda = "Сфинкс";
-cat1.age = 10;
-cat1.owner = "Иван Васильевич";
+    public static void main(String[] args) {
+        Cat cat1 = new Cat();
+        cat1.name = "Барсик";
+        cat1.poroda = "Сфинкс";
+        cat1.age = 10;
+        cat1.owner = "Иван Васильевич";
 
-Cat cat2 = new Cat();
-cat2.name = "Мурка";
-cat2.poroda = "Вислоухая";
-cat2.age = 8;
-cat2.owner = "Дарья Ивановна";
+        Cat cat2 = new Cat();
+        cat2.name = "Мурка";
+        cat2.poroda = "Вислоухая";
+        cat2.age = 8;
+        cat2.owner = "Дарья Ивановна";
 
-Cat cat3 = new Cat();
-cat3.name = "Жорик";
-cat3.poroda = "Дворняга";
-cat3.age = 9;
-cat3.owner = "Татьяна Викторовна";
+        Cat cat3 = new Cat();
+        cat3.name = "Жорик";
+        cat3.poroda = "Дворняга";
+        cat3.age = 9;
+        cat3.owner = "Татьяна Викторовна";
 
-Cat cat4 = new Cat();
-cat4.name = "Марья";
-cat4.poroda = "Персидская";
-cat4.age = 9;
-cat4.owner = "Кирилл Петрович";
+        Cat cat4 = new Cat();
+        cat4.name = "Марья";
+        cat4.poroda = "Персидская";
+        cat4.age = 9;
+        cat4.owner = "Кирилл Петрович";
 
-Cat cat5 = new Cat();
-cat5.name = "Марья";
-cat5.poroda = "Персидская";
-cat5.age = 9;
-cat5.owner = "Кирилл Петрович";
+        Cat cat5 = new Cat();
+        cat5.name = "Марья";
+        cat5.poroda = "Персидская";
+        cat5.age = 9;
+        cat5.owner = "Кирилл Петрович";
 
-Set<Cat> cats = new HashSet<>();
-cats.add(cat1);
-cats.add(cat2);
-cats.add(cat3);
-cats.add(cat4);
-cats.add(cat5);
+        Set<Cat> cats = new HashSet<>();
+        cats.add(cat1);
+        cats.add(cat2);
+        cats.add(cat3);
+        cats.add(cat4);
+        cats.add(cat5);
 
-printSet(filterAsAge(cats, 9));
-// cats.forEach(cat -> System.out.println(cat));
-}
+        printSet(filterAsAge(cats, 9));
+        // cats.forEach(cat -> System.out.println(cat));
+    }
+ 
+    static Set<Cat> filterAsAge(Set<Cat> cats, int age) {
+        Set<Cat> set = new HashSet<>();
+        for (Cat cat : cats) {
+            if (cat.age == age) {
+                set.add(cat);
+            }
+        }
+        return set;
+    }
 
-static Set<Cat> filterAsAge(Set<Cat> cats, int age){
-Set<Cat> set = new HashSet<>();
-for (Cat cat: cats){
-if (cat.age == age){
-set.add(cat);
-}
-}
-return set;
-}
-
-static void printSet(Set<Cat> set){
-for (Cat cat: set){
-System.out.println(cat);
-}
-}
+    static void printSet(Set<Cat> set) {
+        for (Cat cat : set) {
+            System.out.println(cat);
+        }
+    }
 }

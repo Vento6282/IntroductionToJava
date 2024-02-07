@@ -22,7 +22,7 @@ System.out.println(ans.answer(QUERY, PARAMS));
 }
 
 class Answer {
-    public static StringBuilder answer(String QUERY, String PARAMS){
+    public StringBuilder answer(String QUERY, String PARAMS){
     // Напишите свое решение ниже
     StringBuilder stringBuilder = new StringBuilder();
     stringBuilder.append(QUERY);
