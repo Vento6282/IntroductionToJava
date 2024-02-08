@@ -5,7 +5,7 @@ public class Notebook {
     int hdd;
     String os;
     String color;
-
+ 
     @Override
     public String toString(){
         return ("RAM - " + ram +" GB; HDD - "+ hdd + " GB; OS - "+os +"; color - " + color);

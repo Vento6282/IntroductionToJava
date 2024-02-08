@@ -20,12 +20,3 @@ public class Printer{
       System.out.println(itresume_res);
     }
 }
-class Answer {
-    public int countNTriangle(int n){
-      if (n < 1) 
-        return -1;
-      if (n==1) 
-        return 1;
-      return n + countNTriangle(n-1);
-    }
-}
